@@ -4,10 +4,11 @@ import com.SebastianContreras.SpringBootRest.entities.Maker;
 import com.SebastianContreras.SpringBootRest.persistence.IMakerDao;
 import com.SebastianContreras.SpringBootRest.services.IMakerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class MakerService implements IMakerService {
     @Autowired
     private IMakerDao makerDao;

@@ -25,5 +25,6 @@ public class Product {
 
     @ManyToOne
     @JoinColumn(name = "id_fabricante",nullable = false)
+    @JsonIgnore
     private Maker maker;
 }

@@ -4,11 +4,13 @@ import com.SebastianContreras.SpringBootRest.entities.Product;
 import com.SebastianContreras.SpringBootRest.persistence.IProductDao;
 import com.SebastianContreras.SpringBootRest.services.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class ProductService implements IProductService {
     @Autowired
     private IProductDao productDao;
